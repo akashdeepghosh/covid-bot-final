@@ -142,4 +142,4 @@ if __name__ == "__main__":
     except Exception as e:
         print(f'Failed to load file')
         print(str(e))
-    bott.run("NjQ3ODA0NjUyODI1NDc3MTQx.XdlBGA.p9b3V3JBz0qPn764z3k4laZttqk")
+    bott.run("NjQ3ODA0NjUyODI1NDc3MTQx.XdlBGA.yMJ5lxc68Yd4UuMJsxYKZvq9V2c")
