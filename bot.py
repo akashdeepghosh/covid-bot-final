@@ -304,12 +304,12 @@ class Tracker(commands.Cog):
      #  await plot_graph(ctx, iso2, 1)
         await plot_graph1(ctx,iso3,1, name)
 
-    @commands.command(brief="Get stats about any country")
-    async def stats(self, ctx, *, country:str = None):
-        """Usage: `..stats <country 2/3 digit code>` or `..stats <country_name>`"""
+    @commands.command(brief="Get cases about any country")
+    async def cases(self, ctx, *, country:str = None):
+        """Usage: `..cases <country 2/3 digit code>` or `..cases <country_name>`"""
 
         if country is None:
-            await ctx.send(f"Usage: `..stats <country 2/3 digit code>` or `..stats <country_name>`")
+            await ctx.send(f"Usage: `..cases <country 2/3 digit code>` or `..cases <country_name>`")
             return
 
         iso2 = ""
