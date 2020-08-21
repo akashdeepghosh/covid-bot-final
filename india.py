@@ -38,8 +38,8 @@ async def send_error(ctx, message):
 
 async def send_help(ctx):
     desc = "__Specific commands (INDIA)__\n\n"
-    desc += "1. `..ind stats`\nGet stats about a particular state/union-territory/city of India\nEx: **..ind stats**\n\n"
-    desc += "2. `..ind today`\nGet stats about new data in whole India today\nEx: **..ind today**\n\n\n"
+    desc += "1. `..ind cases`\nGet cases about a particular state/union-territory/city of India\nEx: **..ind cases**\n\n"
+    desc += "2. `..ind today`\nGet cases about new data in whole India today\nEx: **..ind today**\n\n\n"
 
     embed = discord.Embed(description=desc, color=discord.Color.orange())
     embed.set_author(name="Information About Commands")
@@ -58,12 +58,12 @@ class India(commands.Cog):
         color=Color.gold()
         return Embed(description=text, color=color)
 
-    @commands.group(brief="Stats about all districts in India", invoke_without_command=True)
+    @commands.group(brief="Case information about all districts in India", invoke_without_command=True)
     async def ind(self, ctx):
         await send_help(ctx)
 
-    @ind.command(brief='Get coronavirus stats for states/union territories')
-    async def stats(self, ctx, choice: int = None):
+    @ind.command(brief='Get coronavirus statistics for states/union territories')
+    async def cases(self, ctx, choice: int = None):
         if choice is None:
             header = ["ID", "Region"]
             count = 0
