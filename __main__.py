@@ -94,7 +94,7 @@ async def help(ctx):
     desc += "__General Commands__😷\n\n"
     desc += " `overall`\nGet Overall stats about Coronavirus\n\n"
     desc += " `top`\nGet top 10 affected countries\n\n"
-    desc += " `stats <country name or short form>`\nGet statistics about a particular country and contains live image from Wikipedia. Don't use <>\n\n"
+    desc += " `cases <country name or short form>`\nGet statistics about a particular country and contains live image from Wikipedia. Don't use <>\n\n"
     desc += " `plot <country name or short form>`\nPlots both linear and logarithmic graphs for a particular country. Don't use <>\n\n"
     desc += " `hist <country name or short form>`\nGet past 6 days data for a particular country. Don't use <>\n\n\n"
 
